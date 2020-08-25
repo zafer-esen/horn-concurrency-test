@@ -23,13 +23,13 @@ lazy val root = (project in file(".")).
 
 //
 settings(
-  //scalaSource in Compile := baseDirectory.value / "src",
+  scalaSource in Compile := baseDirectory.value / "src",
   //
   //mainClass in Compile := Some("tricera.Main"),
   //
-  //scalacOptions in Compile ++=
-  //  List("-feature",
-  //       "-language:implicitConversions,postfixOps,reflectiveCalls"),
+  scalacOptions in Compile ++=
+    List("-feature",
+         "-language:implicitConversions,postfixOps,reflectiveCalls"),
   scalacOptions += (scalaVersion map { sv => sv match {
                                         case "2.11.12" => "-optimise"
                                         case "2.12.8" => "-opt:_"
