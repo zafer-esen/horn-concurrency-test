@@ -1,6 +1,6 @@
 
 lazy val commonSettings = Seq(
-  name := "Horn Concurrency",
+  name := "Horn-Concurrency",
   organization := "uuverifiers",
   version := "1.0",
   scalaVersion := "2.11.12",
